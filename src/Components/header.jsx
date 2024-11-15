@@ -6,7 +6,7 @@ function Header() {
     <> 
       <div className='h-[50px] w-full border flex items-center relative'>
         <img
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnWPFEZW4ZR90k7SRhE7c_NKjgSpAduvOqQ&s'
+          src='https://png.pngtree.com/png-clipart/20180617/ourmid/pngtree-black-vector-brush-strokes-png-image_4687327.png'
           alt='logo'
           className='object-fill h-[48px] w-18'
         />

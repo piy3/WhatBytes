@@ -3,7 +3,7 @@
 import React from "react";
 
 function SkillTestCard({OpenPopup}) {
-  
+   
   const handlechange = ()=>{
     OpenPopup(true);
   }
