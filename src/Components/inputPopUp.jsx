@@ -1,5 +1,6 @@
 "use-client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 function InputPopUp({ state, InputData }) {
   const [Open, setOpen] = useState({ state });
@@ -34,10 +35,12 @@ function InputPopUp({ state, InputData }) {
           >
             <h2 className="text-xl font-semibold mb-4">Update scores</h2>
             <div className="absolute top-4 right-4">
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
                 alt="HTML5 Logo"
-                className="w-8 h-8"
+                width={32} // Equivalent to Tailwind's `w-8`
+                height={32} // Equivalent to Tailwind's `h-8`
+                className="rounded"
               />
             </div>
             <div className="space-y-4">
