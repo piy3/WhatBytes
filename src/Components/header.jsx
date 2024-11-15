@@ -9,9 +9,9 @@ function Header() {
         <Image
           src="https://png.pngtree.com/png-clipart/20180617/ourmid/pngtree-black-vector-brush-strokes-png-image_4687327.png"
           alt="Logo"
-          width={72}
-          height={48}
-          className="object-fill"
+          width={42}
+          height={25}
+          // className="object-fill"
         />
         <div className="flex justify-center w-fit">
           <p className="text-lg font-bold">WhatBytes</p>
