@@ -6,7 +6,7 @@ const QuestionAnalysis =({ totalQuestions, correctAnswers })=> {
 
   useEffect(() => {
     const percentage = (correctAnswers / totalQuestions) * 100;
-    // Introduce a slight delay before starting the animation
+
     const timer = setTimeout(() => {
       setProgress(percentage);
     }, 300); 

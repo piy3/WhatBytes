@@ -24,7 +24,6 @@ function Home() {
       // console.log(";;;;")
       for(let i=0;i<initialPercentiles.length;i++){
         sum = sum+ initialPercentiles[i]*initialStudentCounts[i];
-        // console.log(initialPercentiles[i], initialStudentCounts[i], initialPercentiles[i]*initialStudentCounts[i], sum);
       }
       for(let i=0;i<initialStudentCounts.length;i++){
         students = students+ initialStudentCounts[i];
@@ -46,21 +45,17 @@ function Home() {
     setPercentile(data.percentile);
     setData(data);
   };
-  //graph data
+  //graph data handling
   
   const [indx,setindx] = useState(-1);
 
   useEffect(()=>{
-    // console.log("ppp",Percentile);
-    // console.log("wtf",initialPercentiles.includes(Percentile));
+    
     if( initialPercentiles.includes(Percentile)){
-      // initialPercentiles.sort();
-      // console.log("ww");
-        // indx = initialPercentiles.indexOf(Percentile);
+
         setindx(initialPercentiles.indexOf(Percentile));
         // console.log(initialPercentiles.indexOf(Percentile));
-        // console.log("n-indx ",initialPercentiles.indexOf(Percentile));
-        // console.log("indx-prev-count", initialStudentCounts[initialPercentiles.indexOf(Percentile)]);
+
         initialStudentCounts[initialPercentiles.indexOf(Percentile)] = initialStudentCounts[initialPercentiles.indexOf(Percentile)]+1;
         // console.log("indx-later-count", initialStudentCounts[initialPercentiles.indexOf(Percentile)]);
     }else if(Percentile!=-1){
@@ -79,9 +74,9 @@ function Home() {
 },[Popup])
 
 
-  // New percentile to highlight (e.g., 70th percentile with 12 students)
+
   // console.log("alphaq",indx);
-  // console.log(Data.percentile, "sigmadikh",initialStudentCounts[indx]);
+  // console.log(Data.percentile, "----",initialStudentCounts[indx]);
   const newPercentile = { percentile: Data.percentile, count:(indx==-1?0: initialStudentCounts[indx])  };
 
   return (
